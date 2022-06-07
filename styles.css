@@ -1,0 +1,85 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+	-moz-appearance:textfield; /* Firefox */
+}
+
+body {
+	background: #001;
+	color: #ecc;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 18px;
+}
+
+header, main, footer {
+	width: 400px;
+	margin: 24px auto;
+	vertical-align: baseline;
+	padding: 5px 0;
+}
+
+header h1 {
+	text-align: center;
+	margin: 48px auto;
+	white-space: nowrap;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.left, .right {
+	display: inline-block;
+	width: 48%;
+	vertical-align: middle;
+}
+
+.right {
+	text-align: right;
+}
+
+.play-btn {
+	width: 160px;
+	height: 50px;
+	text-align: center;
+	font-size: 18px;
+	border: 4px solid #e99;
+}
+
+.number {
+	text-align: center;
+	font-size: 32px;
+	border: 2px solid #ecc;
+	width: 33%;
+	margin: 24px auto;
+	padding: 18px 0;
+}
+
+.number-text {
+	vertical-align: middle;
+	width: 64px;
+	height: 40px;
+	text-align: center;
+	font-size: 24px;
+	border: 4px solid #e99;
+}
+
+.check-btn {
+	vertical-align: middle;
+	margin-left: 12px;
+	width: 84px;
+	height: 50px;
+	text-align: center;
+	font-size: 18px;
+	border: 4px solid #e99;
+}
+
+.feedback {
+	margin: 16px;
+}

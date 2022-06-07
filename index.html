@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guess Number Game</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<header>
+
+		<div class="left">
+			<button id="playBtn" class="play-btn">START</button>
+		</div>
+
+		<div class="right">
+			<p>Between: 1 - 100.</p>
+		</div>
+
+		<h1>Guess My Number</h1>
+
+		<div id="numGuess" class="number">?</div>
+
+	</header>
+
+	<main>
+
+		<div class="left">
+			<input id="numInput" class="number-text" type="number" placeholder="00">
+			<button id="checkBtn" class="check-btn">CHECK</button>
+		</div>
+
+		<div class="right">
+			<p id="feedback" class="feedback">Feed Back.</p>
+		</div>
+
+	</main>
+
+	<footer>
+
+		<div class="left">
+			<p>Score: <span id="score">00</span></p>
+		</div>
+
+		<div class="right">
+			<p>High Score: <span id="highScore">00</span></p>
+		</div>
+
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
