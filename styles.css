@@ -23,6 +23,19 @@ header, main, footer {
 	padding: 5px 0;
 }
 
+header {
+	border-bottom: 4px solid #ecc;
+	padding-bottom: 40px;
+}
+
+main {
+	margin-top: 96px;
+}
+
+footer {
+	border-top: 2px solid #ecc;
+}
+
 header h1 {
 	text-align: center;
 	margin: 48px auto;
@@ -53,12 +66,15 @@ p {
 }
 
 .number {
+	background: #001;
 	text-align: center;
-	font-size: 32px;
+	font-size: 48px;
 	border: 2px solid #ecc;
-	width: 33%;
-	margin: 24px auto;
-	padding: 18px 0;
+	width: 128px;
+	padding: 8px 0;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
 }
 
 .number-text {
@@ -82,4 +98,8 @@ p {
 
 .feedback {
 	margin: 16px;
+}
+
+.hidden {
+	opacity: 0;
 }
